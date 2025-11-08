@@ -1,0 +1,6 @@
+Task 3 Commands Executed:
+1. Created dynamic User Registration Form for example.com
+2. Created dynamic Product Order Form for anothervhost.com
+3. Both forms include JavaScript validation and interactivity
+4. Restarted Apache to apply changes
+5. Tested both dynamic websites

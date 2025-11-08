@@ -1,0 +1,11 @@
+Task 2 Commands Executed:
+1. Created directories: /var/www/example.com/html and /var/www/anothervhost.com/html
+2. Set permissions and ownership
+3. Created HTML content for both sites
+4. Created virtual host configurations
+5. Enabled sites: example.com.conf and anothervhost.com.conf
+6. Disabled default site
+7. Added domains to /etc/hosts
+8. Tested Apache configuration
+9. Restarted Apache
+10. Tested all domains

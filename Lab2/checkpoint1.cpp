@@ -1,5 +1,11 @@
 // caesar_solver.cpp
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <cmath>
+#include <map>
+#include <set>
 using namespace std;
 
 string shift_text(const string &s, int sh){
