@@ -1,0 +1,11 @@
+commands
+
+
+openssl enc -aes-128-ecb -e -in padtest.txt -out pad_ecb.bin -K 00112233445566778899aabbccddeeff
+openssl enc -aes-128-cbc -e -in padtest.txt -out pad_cbc.bin -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+openssl enc -aes-128-cfb -e -in padtest.txt -out pad_cfb.bin -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+openssl enc -aes-128-ofb -e -in padtest.txt -out pad_ofb.bin -K 00112233445566778899aabbccddeeff -iv 0102030405060708090a0b0c0d0e0f10
+
+
+In AES encryption, padding is required only for block-based modes (ECB and CBC), because data must be an exact multiple of the 16-byte block size.
+Stream-like modes (CFB and OFB) work on smaller data units and generate a keystream that can be XORed with plaintext of any length, so padding is unnecessary.

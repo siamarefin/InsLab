@@ -1,0 +1,16 @@
+commands
+
+CBC-command
+/opt/homebrew/opt/openssl@3/bin/openssl enc -aes-128-cbc -e -in test.txt -out cbc.bin \   
+  -K 00112233445566778889aabbccddeeff \
+  -iv 0102030405060708
+
+cfb-command
+/opt/homebrew/opt/openssl@3/bin/openssl enc -aes-128-cfb -e -in test.txt -out cfb.bin \
+  -K 00112233445566778889aabbccddeeff \
+  -iv 0102030405060708
+
+-bf-cbc command
+/opt/homebrew/opt/openssl@3/bin/openssl enc -bf-cbc -e -in test.txt -out bf_cfb.bin \
+  -K 00112233445566778889aabbccddeeff \
+  -iv 0102030405060708

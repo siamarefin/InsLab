@@ -1,0 +1,25 @@
+
+tried to open the encrypted picture but failed to do that. because of
+
+A .bmp file has a 54-byte header that tells the image viewer things like:
+
+The image width and height
+
+The bit depth (e.g., 24-bit RGB)
+
+The file size
+
+when i encrypt the picture the header also changed. in this case i replace it with original 54 bytes. then i can open it and but the picture can't be traceable
+
+
+command: 
+
+/opt/homebrew/opt/openssl@3/bin/openssl enc -aes-128-ecb -e \
+  -in original.bmp -out enc_ecb.bmp \
+  -K 00112233445566778899aabbccddeeff -nopad
+
+
+/opt/homebrew/opt/openssl@3/bin/openssl enc -aes-128-cbc -e \
+  -in original.bmp -out enc_cbc.bmp \
+  -K 00112233445566778899aabbccddeeff \
+  -iv 0102030405060708090a0b0c0d0e0f10

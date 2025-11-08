@@ -1,0 +1,8 @@
+MD5(message.txt)= db89bb5ceab87f9c0fcc2ab36c189c2c
+SHA1(message.txt)= cd36b370758a259b34845084a6cc38473cb95e27
+SHA2-256(message.txt)= 2d8c2f6d978ca21712b5f6de36c9d31fa8e96a4fa5d8ff8b0188dfb9e7c171bb
+
+commands:
+openssl dgst -md5 message.txt
+openssl dgst -sha1 message.txt
+openssl dgst -sha256 message.txt

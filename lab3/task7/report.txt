@@ -1,0 +1,11 @@
+H1 and H2 are completely different, even though you changed only one bit in the input file.
+This demonstrates the avalanche effect: a small change in input produces a drastically different hash output.
+
+
+Same bits: 163/256 (63.67%)
+
+
+commands:
+
+openssl dgst -sha256 plaintext.txt
+openssl dgst -sha256 copy_plaintext.txt

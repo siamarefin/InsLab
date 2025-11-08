@@ -1,0 +1,9 @@
+To understand the properties of various encryption modes, we would like to do the following
+task. (2) Please explain why. (3) What are the implication of these differences?
+exercise:
+• Create a text file that is at least 64 bytes long. Use the gedit text editor to create and save the file. gedit also allows you to count the byte number in the file.
+• Encrypt the file using the AES-128 cipher.
+• Unfortunately, a single bit of the 30th byte in the encrypted file got corrupted. You
+can achieve this corruption using a hex editor.
+• Decrypt the corrupted file (encrypted) using the correct key and IV.
+Answer the following questions with the commands used to encrypt and decrypt the file: (1) How much information can you recover by decrypting the corrupted file, if the encryption mode is ECB, CBC, CFB, or OFB, respectively? Answer this question before you conduct this

@@ -1,0 +1,9 @@
+for ofc the 30th byte is different:  20146879 for plain.txt and 20776879 for ofc
+
+for cfb the 30th byte is different: 20146879 for plain.txt and 207A6879 for cfb and also 32th to 36th byte changed
+
+
+for ecb the  different bytes are: 30-32 th byte
+
+
+for ecb the  different bytes are: 29-34th byte

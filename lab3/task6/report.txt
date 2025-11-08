@@ -1,0 +1,33 @@
+KEY1="abcdefg"
+KEY2="1234567890abcdef"
+KEY3="longerkeyforhmac12345"
+
+
+openssl dgst -md5 -hmac "$KEY1" plaintext.txt
+openssl dgst -md5 -hmac "$KEY2" plaintext.txt 
+openssl dgst -md5 -hmac "$KEY3" plaintext.txt
+
+HMAC-MD5(plaintext.txt)= c047ecc0852b276947e0a54d814e936a
+HMAC-MD5(plaintext.txt)= ded9df1a5726c8bc4ad1d4ae0df6d61c
+HMAC-MD5(plaintext.txt)= 94ef3d21197c3176d4e7950167ac93a9
+
+
+openssl dgst -sha1 -hmac "$KEY1" plaintext.txt
+openssl dgst -sha1 -hmac "$KEY2" plaintext.txt
+openssl dgst -sha1 -hmac "$KEY3" plaintext.txt
+
+HMAC-SHA1(plaintext.txt)= 0d84c8f63bd6e368c9405b03db9002ad00840706
+HMAC-SHA1(plaintext.txt)= a24af3336bf3dbb3eeb4f82be4d32660140c88ae
+HMAC-SHA1(plaintext.txt)= 9312fb3dc52973b98d072620e26f8266afb94978
+
+openssl dgst -sha256 -hmac "$KEY1" plaintext.txt
+openssl dgst -sha256 -hmac "$KEY2" plaintext.txt
+openssl dgst -sha256 -hmac "$KEY3" plaintext.txt
+
+HMAC-SHA2-256(plaintext.txt)= 0a509d2391d5c844a89ba976dbb4cac86fd224e149e08a41a62b6dfead76ed94
+HMAC-SHA2-256(plaintext.txt)= 6a049b7cdb46a6caf2bdccbb75687bfc0ab8720b0f50743785a4b853b8a40660
+HMAC-SHA2-256(plaintext.txt)= 32d8a9f3a56d06a5a33a6fe0ba880d68d70f6f3d8b142c7c0361c22bc6c61e62
+
+No, i don't need to use fixed length size key. HMAC allows variable-length keys. OpenSSL handles too-long keys by hashing them, and pads shorter keys to the hash block size.
+
+ 
