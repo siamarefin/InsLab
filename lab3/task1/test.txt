@@ -1,1 +1,10 @@
-This is a testing test......
+In this lab, you will perform symmetric encryption and hashing utilising one of the most widely
+used crypto tools called Openssl. It is widely used in Internet web servers, serving a majority
+of all web sites. OpenSSL contains an open-source implementation of the SSL and TLS
+protocols. The core library, written in the C programming language, implements basic
+cryptographic functions and provides various utility functions. Wrappers allowing the use of
+the OpenSSL library in a variety of computer languages are available.
+In this lab, we will use its different utility functions to perform symmetric encryption and
+hashing. You will be given a set of tasks for using Openssl to perform these functions. For this
+you will also need to use an HEX editor like GHex in Ubuntu. Follow the instructions, complete
+the tasks and prepare a report as per instructed.
